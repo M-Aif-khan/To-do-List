@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: black;
+        }
+        .main{
+            box-shadow: 10px 10px 15px 20px greenyellow;
+            border-radius: 8px;
+            padding: 100px;
+            width: fit-content;
+            padding-top: 9px;
+          
+        }
+        .js-name-input,.Date-js,.add-btn{
+            padding: 10px;
+            font-size: 20px;
+        }
+        .Date-js{
+            height: 25px;
+            margin-left: 10px;
+        }
+        .add-btn{
+            width: 100px; 
+            font-size: 20px;
+            background-color: darkgreen;
+            color: white;
+            border: none;
+            border-radius: 0px;
+            height: 50px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .task-js {
+            margin-top: 20px;
+    color: white;
+    display: grid;
+    grid-template-columns: 200px 150px 100px; /* Flexible column sizes */
+    column-gap: 93px; /* Add spacing between columns */
+    row-gap: 10px;
+    font-size: 20px;
+    }
+    .del-btn{
+        width: 100px; 
+        font-size: 20px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 0px;
+        height: 50px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+    
+
+    </style>
+</head>
+<body>
+    <center>
+        <div class="main">
+     
+            <p id ="main-heading"><h2  style="color: lightgreen;">Todo List</h2></p>
+            <input type = "text" placeholder = "Todo name" class = "js-name-input">
+            <input type="date" class = "Date Date-js" placeholder="Due Date">
+            <!-- <button onclick = "addTodo()" class= "add-btn">Add</button> -->
+            <button class= "add-btn">Add</button>
+            <div class="task-js">
+                
+               
+            </div>
+            <script src="scirpts/todo12.js"></script>
+        </div>
+    </center>
+</body>
+</html>
+
+<!-- const deleteButton = document.querySelector('.del-btn');
+deleteButton.addEventListener('click',()=>{
+    
+    todoList.splice(ind,1);
+        localStorage.setItem('tasksData', JSON.stringify(todoList));
+        DisplayList();
+}) -->
